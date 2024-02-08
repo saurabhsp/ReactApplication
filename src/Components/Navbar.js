@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 
 export default function Navbar(props) {
   return (
@@ -17,14 +19,24 @@ export default function Navbar(props) {
           <a className="nav-link" href="/">{props.about} <span className="sr-only">(current)</span></a>
         </li>
         <li className="nav-item active">
-          <a className="nav-link" href="/">Contact us <span className="sr-only">(current)</span></a>
+          <a className="nav-link" href="/">{props.contact} <span className="sr-only">(current)</span></a>
         </li>
       </ul>
       <form className="form-inline my-2 my-lg-0">
-        <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <input className="form-control mr-sm-2 btn-outline-info" type="search" placeholder="Search" aria-label="Search"/>
+        <button className="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
   </nav>
   )
+}
+
+Navbar.propTypes = {
+  title : PropTypes.string.isRequired,
+  about : PropTypes.string.isRequired
+}
+
+Navbar.defaultProps = {
+  title: 'SetTitleHere',
+  about: 'AboutTextHere'
 }
