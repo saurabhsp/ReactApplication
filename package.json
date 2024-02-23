@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "homepage": "https://github.com/saurabhsp/ReactApplication.git",
+    "homepage": "https://github.com/saurabhsp/React-Application.git",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -11,7 +11,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "bootstrap": "^5.3.2",
+    "react-bootstrap": "^2.10.1"    
   },
   "scripts": {
     "predeploy": "npm run build",
