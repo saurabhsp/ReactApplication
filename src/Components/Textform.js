@@ -31,10 +31,10 @@ export default function Textform(props) {
     let newText = Text.split(/[ ]+/);
     setText(newText.join(" "))
   }
-  const handleRepClick=()=>{
-    let newtext=Text.replaceAll("Harry","Saurabh")
-    setText(newtext)
-  }
+  // const handleRepClick=()=>{
+  //   let newtext=Text.replaceAll("Harry","Saurabh")
+  //   setText(newtext)
+  // }
   const handleClearText = ()=>{
     let newText3 = ''
     setText(newText3);
@@ -55,9 +55,9 @@ export default function Textform(props) {
         <button className="btn btn-primary my-2 mx-2" onClick={handleLoClick}>
           Convert To LowerCase
         </button>
-        <button className="btn btn-info my-2 mx-2" onClick={handleRepClick}>
+        {/* <button className="btn btn-info my-2 mx-2" onClick={handleRepClick}>
           Replace HarrytoSaurabh
-        </button>
+        </button> */}
         <button className="btn btn-warning my-2 mx-2" onClick={handleExtraSpaces}>
           Remove WhiteSpaces
         </button>
